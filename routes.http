@@ -23,3 +23,15 @@ Content-Type: application/json
 {
   "prompt": "nave espacial"
 }
+
+###
+
+# @name generate-ai-completion
+POST http://localhost:3333/ai/complete
+Content-Type: application/json
+
+{
+  "videoId": "73426cd4-4850-4f65-bc5e-f95a62705f28",
+  temperature: 0.5,
+  template: "Gere um resumo sucinto da transcricao do video informado a segur: '''{transcription} '''"
+}
