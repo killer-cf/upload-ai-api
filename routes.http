@@ -17,11 +17,11 @@ Content-Type: audio/mpeg
 ###
 
 # @name create-transcription
-POST http://localhost:3333/videos/73426cd4-4850-4f65-bc5e-f95a62705f28/transcription
+POST http://localhost:3333/videos/b096101e-d193-407c-acf9-08fccd00db88/transcription
 Content-Type: application/json
 
 {
-  "prompt": "nave espacial"
+  "prompt": "clean architecture"
 }
 
 ###
@@ -31,7 +31,7 @@ POST http://localhost:3333/ai/complete
 Content-Type: application/json
 
 {
-  "videoId": "73426cd4-4850-4f65-bc5e-f95a62705f28",
-  temperature: 0.5,
-  template: "Gere um resumo sucinto da transcricao do video informado a segur: '''{transcription} '''"
+  "videoId": "b096101e-d193-407c-acf9-08fccd00db88",
+  "temperature": 0.5,
+  "template": "Gere um resumo sucinto da transcricao do video informado a segur: '''{transcription} '''"
 }
